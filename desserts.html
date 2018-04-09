@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <title>
+      Chocolate Heaven | Desserts
+    </title>    
+    <meta charset="utf-8" />
+
+
+ <!-- This is where your link tag goes when linking to an external style sheet. -->
+ 
+ <link href="chocheaven.css" rel="stylesheet">
+ 
+<!--This is the format you will use when entering JavaScript -->
+
+<script type="text/javascript">
+
+function calculate()
+{   var error = false;
+
+    if (isNaN(document.forms[0].popOrder.value))
+    {
+    
+    alert("A numeric value is required when ordering a dessert.");
+    error = true;
+    }
+    
+    else
+    {
+        var popOrder = parseInt(document.forms[0].popOrder.value);
+        var strawOrder = parseInt(document.forms[0].strawOrder.value);
+        var cupOrder = parseInt(document.forms[0].cupOrder.value);
+        var trifleOrder = parseInt(document.forms[0].trifleOrder.value);
+        var cakeOrder = parseInt(document.forms[0].cakeOrder.value);
+        var fondueOrder = parseInt(document.forms[0].fondueOrder.value);
+    }
+    
+    if (!error)
+    {
+      total = popOrder * 3 + strawOrder * 4 + cupOrder * 8 + trifleOrder * 15 + cakeOrder * 25 + fondueOrder * 35 * 1.0825;
+      window.alert("Your order totals: " + total.toFixed(2));
+    }
+}     
+ 
+</script>
+</head>
+
+<body> <div id="wrapper">
+ 
+  <nav>
+    <a href="project2.htm">Home</a> &nbsp; <a href="desserts.html">Desserts</a> &nbsp; <a href="jobapp.htm">Career Opportunities</a>
+  </nav>
+  
+<form>
+
+<h1>DESSERT MENU</h1>
+
+<div id="choctable">
+
+<script type="text/javascript">
+
+/* <![CDATA[ */
+var dessert = new Array (6);
+dessert[0] = "Cake Pops";
+dessert[1] = "Dipped Strawberries";
+dessert[2] = "Mousse Cups";
+dessert[3] = "Trifles";
+dessert[4] = "Cakes";
+dessert[5] = "Fondue";
+
+var price = new Array (6);
+price[0] = 3;
+price[1] = 4;
+price[2] = 8;
+price[3] = 15;
+price[4] = 25;
+price[5] = 35;
+
+document.write("<table>");
+document.write("<caption><em>Delicious Creations Prepared Daily</em></caption>");
+document.write("<thead>");
+document.write("<tr>");
+document.write("<th>Chocolate Specialty</th>");
+document.write("<th>Price</th>");
+document.write("</tr>");
+document.write("</thead>");
+ 
+document.write("<tbody>");
+document.write("<tr><td><img src='cakepops2.jpg' width='144' height='114'/>" + "<br />" + dessert[0] + "</td><td>" + "$" + price[0].toFixed(2) + "&nbsp;" + "each" + "<br />" + "<br />" + "Quantity Requested" + "<br />"  + "<input type='text' name='popOrder' size='5' value='0' >" + "</td></tr>");
+document.write("<tr><td><img src='strawberries2.jpg' width='144' height='114'/>" + "<br />" + dessert[1] + "</td><td>" + "$" + price[1].toFixed(2) + "&nbsp;" + "each" + "<br />" + "<br />" + "Quantity Requested" + "<br />"  + "<input type='text' name='strawOrder' size='5' value='0' >" + "</td></tr>");
+document.write("<tr><td><img src='capcup2.jpg' width='144' height='114'/>" + "<br />" + dessert[2] + "</td><td>" + "$" + price[2].toFixed(2) + "&nbsp;" + "each" + "<br />" + "<br />" + "Quantity Requested" + "<br />"  + "<input type='text' name='cupOrder' size='5' value='0' >" + "</td></tr>");
+document.write("<tr><td><img src='trifle2.jpg' width='144' height='114'/>" + "<br />" + dessert[3] + "</td><td>" + "$" + price[3].toFixed(2) + "&nbsp;" + "each" + "<br />" + "<br />" + "Quantity Requested" + "<br />"  + "<input type='text' name='trifleOrder' size='5' value='0' >" + "</td></tr>");
+document.write("<tr><td><img src='cake2.jpg' width='144' height='114'/>" + "<br />" + dessert[4] + "</td><td>" + "$" + price[4].toFixed(2) + "&nbsp;" + "each" + "<br />" + "<br />" + "Quantity Requested" + "<br />"  + "<input type='text' name='cakeOrder' size='5' value='0' >" + "</td></tr>");
+document.write("<tr><td><img src='fondue2.jpg' width='144' height='114'/>" + "<br />" + dessert[5] + "</td><td>" + "$" + price[5].toFixed(2) + "&nbsp;" + "each" + "<br />" + "<br />" + "Quantity Requested" + "<br />"  + "<input type='text' name='fondueOrder' size='5' value='0'>" + "</td></tr>");
+
+document.write("</tbody>")
+document.write("</table>")
+
+ /* ]]> */
+</script>
+</div>
+
+<p><input type="button" name="numberDessert" onclick="calculate()" value="Click here to calculate your dessert total" /></p>
+
+</form>
+
+
+<footer>
+<small><i>Copyright &copy; 2015 Chocolate Heaven &nbsp; anna@canaves.com</i></small> 
+</footer>
+</div>
+
+<!-- external javascript for validation -->  
+<script type="text/javascript" src="../../validation.js">
+</script>
+
+
+</body> 
+</html>

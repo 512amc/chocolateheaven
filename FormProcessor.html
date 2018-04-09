@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Chocolate Heaven Application Confirmation</title>
+    <link href="chocheaven.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body><div id="wrapper">
+    
+  <nav>
+    <a href="project2.htm">Home</a> &nbsp; <a href="desserts.html">Desserts</a> &nbsp; <a href="jobapp.htm">Career Opportunities</a>
+  </nav>
+
+
+<h1>
+    Thank you for your interest in Chocolate Heaven!</h1>
+ 
+<h2>
+    Your application has been submitted.</h2>
+
+<h3>You entered the following data:</h3>
+   
+<div>
+
+<script type="text/javascript">
+    
+/* <![CDATA[ */
+
+var formData = location.search;
+formData = formData.substring(1, formData.length);
+while (formData.indexOf("+") != -1) {
+    formData = formData.replace("+", " ");
+}
+
+formData = unescape(formData);
+var formArray = formData.split("&");
+document.write("<p>");
+for (var i=0; i < formArray.length; ++i) {
+    document.writeln(formArray[i] + "<br />");
+}
+document.write("</p>");
+/* ]]> */
+</script>
+</div>
+
+</div>
+ 
+    
+<!-- external javascript for validation -->
+<script type="text/javascript" src="../../validation.js">
+</script>
+    
+
+
+</body>
+</html>

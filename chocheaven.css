@@ -1,0 +1,58 @@
+body {background-color:#FFCCCC;
+color:#663333;
+margin:0 auto;
+text-align:center;
+}
+
+h1 {color:#663333;}
+
+header {background:url('images/symphony.png');}
+
+h2 {color:#663333;}
+
+p {color:#993333}
+
+nav {background-color:#CC9999; padding: 8px; font-weight: bold}
+
+footer {
+  display:block;
+  margin:10px;
+}
+
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+dt {color:#CC3300}
+
+.shopname {color:#663333; font-weight:bold;}
+
+.contact {color:#336666}
+
+table {width:400px; margin:auto;}
+
+table, th, td {border-spacing:0;
+    border:1px solid black;
+}
+    
+th, td {padding:5px;}
+
+td {text-align:left;}
+
+td.text {text-align:left;}
+
+caption {font-size:1.5em;color:#663333;}
+
+thead {background-color:transparent;}
+
+tbody {font-family: Arial, sans-serif; font-size:.90em; }
+
+tbody td {border-bottom:1px #000000 solid; padding:10px;}
+
+#choctable tbody td {text-align:center;}
+
+tfoot {background-color:transparent; font-weight:bold;}
+
+
+
